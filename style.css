@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Mynerve&family=Quicksand:wght@500;700&display=swap');
+*{
+    box-sizing: border-box;
+    }
+header{
+    display: inline;
+}
+
+.jumbotron + #upper {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40pt;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    
+}
+
+main{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main p{
+  font-family: 'Lato', sans-serif;
+}
+nav {
+
+    background-color: #2E4F4F;
+    padding: 2px;
+    position: sticky;
+    top: 0;
+  }
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+nav li {
+    list-style-type: none;
+  }
+li{
+    display: inline;
+    padding: 5px;
+    margin: 5px 20px 5px 20px;
+    margin-left: 5px;
+}
+#content{
+    box-sizing: content-box;
+}
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+   font-family: 'Lato', sans-serif;
+}
+
+.jumbotron {
+    padding: 60px;
+    background-color: #00c8eb;
+   background-image: url(assets/image/workspace.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+  }
+.opening{
+  font-size: 30pt;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #2E4F4F;
+}
+  #content {
+   flex: 5;
+   display: flex;
+   flex-flow: column nowrap;
+   gap: 1.5rem;
+  }
+  body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  main {
+    padding: 20px;
+   display: flex;
+   gap: 1.5rem;
+  }
+.subcontent{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20pt;
+    font-weight: 3000;
+    color: #2E4F4F;
+}
+nav a{
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+nav a:hover{
+    font-weight: bold;
+}
+.subtitle{
+  font-size: 15pt;
+  text-align: center;
+  
+}
+
+h3 {
+    color: cadetblue;
+}
+.profile header {
+    text-align: center;
+ }
+.featured-image {
+    width: 100%;
+    max-height: 1000px;
+    object-fit: cover;
+    object-position: center;
+ }
+ .tools {
+    width: 150px;
+    padding: 20px;
+ }
+ 
+ aside{
+    font-family: 'Montserrat', sans-serif;
+    color: #2E4F4F;
+    flex: 1;
+ }
+ .biodata{
+  object-position: center;
+  text-align: center;
+ }
+ .bio {
+  border-radius: 50%;
+  width: 150px;
+ }
+ .biodata table{
+  padding: 20%;
+ }
+ article .contact-bio{
+  font-size: 40px;
+  text-align: center;
+  color: #0E8388;
+ }
+ article .contact-bio li a{
+ 
+  color: #0E8388;
+ }
+
+ section .bio img{
+  border-radius: 50%;
+ }
+ @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+  }
+   
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    main aside {
+      align-self: stretch;
+    }
+  }
+footer {
+    font-family:'Lato', sans-serif;
+    padding: 20px;
+    color: white;
+    background-color: #0E8388;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.container-slider {
+  
+  padding: 100px 0 0 0;
+}
+
+
+.container-slider {
+
+  padding: 100px 0 0 0;
+}
+
+/* Slideshow container */
+.content-slide {
+  max-width: 1000px;
+  max-height: 1000px;
+ display:flow-root;
+  margin: auto;
+}
+
+.imgslide {
+  display: none;
+}
+
+.picslide {
+  vertical-align: middle;
+  width:100%;height: 400px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position:fixed;
+
+  width: auto;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 16px;
+  color: rgb(255, 254, 224);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  margin-left: 430px;
+}
+
+.pre:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(0, 0, 0);
+}
+
+.text {
+  color: #fafafa;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.content-slide .numberslide {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* resposive */
+
+
+
+.container-slider .page {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.page .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border-radius: 50%;
+}
+
+.page .active,
+.page .dot:hover {
+  background-color: #ce0000;
+}
